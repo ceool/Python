@@ -1,3 +1,4 @@
+## AWS EC2와 RDS를 이용한 장고 DB 연동 웹
 ![2](https://user-images.githubusercontent.com/62891711/104141093-518b2380-53f8-11eb-94c7-11814dcd6509.png)
 ![3](https://user-images.githubusercontent.com/62891711/104141096-52bc5080-53f8-11eb-97ef-93e05de55e31.png)
 ![제목 없음](https://user-images.githubusercontent.com/62891711/104141049-096c0100-53f8-11eb-8061-6c018b357ac5.png)
@@ -102,7 +103,7 @@ def index(request):
 -----------------------------------------<br>
 <br>
 <br>
-python manage.py runserver 0.0.0.0:8000<br>
+python manage.py runserver 0.0.0.0:80<br>
 <br>
 <br>
 INSERT INTO polls_blog VALUES (3, '테스트3', '테스트3 입니다.', NOW(), NOW());<br>
