@@ -12,8 +12,7 @@
 django-admin startproject mysite<br>
 python manage.py startapp polls<br>
 <br>
-mysite/settings.py 수정<br>
---------------------------------------<br>
+### mysite/settings.py 수정
 ```
 LANGUAGE_CODE = 'ko-kr' 
 TIME_ZONE = 'Asia/Seoul'
@@ -54,8 +53,7 @@ python manage.py inspectdb -> startapp * 이면 */models.py 수정<br>
 or python manage.py inspectdb > */models.py<br>
 <br><br>
 
-startapp polls 이면, polls/admin.py 수정<br>
----------------------------------------<br>
+### startapp polls 이면, polls/admin.py 수정
 ```
 from django.contrib import admin
 from .models import 모델 클래스 이름
@@ -71,8 +69,7 @@ python manage.py createsuperuser<br>
 계정 생성<br>
 <br>
 
-프로젝트이름/urls.py 추가<br>
------------------------------------------<br>
+### 프로젝트이름/urls.py 추가
 ```
 from django.contrib import admin
 from django.urls import include, path
@@ -86,8 +83,7 @@ urlpatterns = [
 <br>
 스타트앱이름/templates/스타트앱이름/index.html 작성<br>
 <br>
-스타트앱이름/views.py 작성<br>
------------------------------------------<br>
+### 스타트앱이름/views.py 작성
 ```
 from django.shortcuts import render
 from django.http import HttpResponse
