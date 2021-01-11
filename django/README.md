@@ -94,10 +94,10 @@ from .models import Blog
 
 # Create your views here.
 def index(request):
-    blogs = Blog.objects.all() #Candidate에 있는 모든 객체를 불러와 candidates에 저장
+    blogs = Blog.objects.all() #Blog에 있는 모든 객체를 불러와 blogs에 저장
     context = {'blogs':blogs}
 
-    return render(request, 'polls/index.html', context)
+    return render(request, 'polls/index.html', context) # index.html에 context 내용 삽입
 ```
 -----------------------------------------<br>
 <br>
@@ -109,8 +109,10 @@ INSERT INTO polls_blog VALUES (3, '테스트3', '테스트3 입니다.', NOW(), 
 DELETE FROM polls_blog WHERE ID = '1';<br>
 
 <br><br>
+```
 EC2: ssh -i "test-01.pem" ubuntu@******.compute-1.amazonaws.com
 DB: mysql -u admin -p -h database-1.*****.us-east-1.rds.amazonaws.com
+```
 ![4](https://user-images.githubusercontent.com/62891711/104141196-dfffa500-53f8-11eb-9d6c-f90dc39053c8.png)
 ![5](https://user-images.githubusercontent.com/62891711/104141222-150bf780-53f9-11eb-9efb-9e5decc5213b.png)
 
