@@ -41,3 +41,36 @@ $ crontab -e
 */3 * * * * cd /root/Python/crawler/web && python3 manage.py runscript crawler 
 # - 3분마다
 ```
+
+<br>
+<br>
+
+### 전체적인 흐름
+```
+pip3 install bs4 requests
+pip3 install python-telegram-bot
+
+pip3 install django
+pip3 install django_extensions
+ - settings.py에 django_extensions 추가
+```
+
+#### 모델 변경 및 추가시
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+python manage.py runscript crawler
+
+#### api 사용
+```
+pip3 install djangorestframework
+```
+
+serializers.py 생성 <br>
+views.py 수정 <br>
+urls.py 수정 <br>
+
+<br>
+
+손쉽게 사용 가능
