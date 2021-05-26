@@ -1,6 +1,9 @@
 #### git clone으로 긁어온 뒤, pip로 설치
 ```
 pip3 install django django_extensions djangorestframework requests bs4 python-telegram-bot
+
+# 헤더 사용시
+pip3 install django-cors-headers
 ```
 
 #### settings.py 수정
@@ -12,8 +15,11 @@ ALLOWED_HOSTS = ['52.78.190.249']
 
 <br>
 
-#### 관리자 생성
+#### 마이그레이션 및 관리자 생성
 ```
+python3 manage.py makemigrations
+python3 manage.py migrate
+
 python3 manage.py createsuperuser
 ```
 
